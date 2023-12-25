@@ -1,0 +1,201 @@
+.header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #bbe0f1;
+    background: url("Header.jpg") no-repeat center center fixed;
+    background-color: transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.header header{
+    display: flex;
+}
+.header button:active{
+    background-color: #c9d6e2 !important;
+  } 
+
+.logo.hdBlock{
+    color: #0b65a7;
+}
+.logo img{
+    background-color: transparent;
+}
+.blLogo{
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Dancing Script';
+}
+.blLogo p{
+    font-size: large;
+    margin-top: -10px;
+}
+
+.login.hdBlock{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #0b65a7;
+}
+.login.hdBlock button{
+    background: #45a9ff;
+    border: #54c0fe;
+    font-family: 'Oswald';
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+}
+nav ul > li {
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+    font-family: fantasy;
+}
+
+@media screen and (min-width: 961px) {
+    header, nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .logo.hdBlock{
+        flex: 10;
+        text-align: left;
+    }
+    .logo img{
+        background-color: transparent;
+        border-radius: 40px;
+        height: 80px;
+    }
+    .blLogo{
+        display: inline-block;
+        margin: 20px;
+        font-size: 50px;
+    }
+    .blLogo p{
+        font-size: large;
+        margin-top: -10px;
+    }
+
+    .login.hdBlock{
+        flex: 2;
+        flex-direction: column;
+    }
+    .login.hdBlock button{
+        border-radius: 10px;
+        padding: 10px;
+        width: 90px;
+        margin: 5px;
+    }
+
+    nav.mobilScreen{
+        display: none;
+    }
+    nav ul > li {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    header, nav {
+        margin: 0px;
+        padding: 0;
+    }
+    .logo.hdBlock{
+        flex: 6;
+        text-align: center;
+    }
+    .logo img{
+        border-radius: 30px;
+        height: 60px;
+    }
+    .blLogo{
+        display: inline-block;
+        margin: 20px 5px;
+        font-size: 40px;
+    }
+    .blLogo p{
+        font-size: 18px;
+        margin-top: -7px;
+        margin-bottom: 0;
+    }
+
+    .login.hdBlock{
+        flex: 2;
+        flex-direction: column;
+    }
+    .login.hdBlock button{
+        border-radius: 10px;
+        padding: 10px;
+        width: 80%;
+        margin: 2px 5px 2px 5px;
+        font-size: 14px;
+    }
+
+    nav.mobilScreen{
+        display: none;
+    }
+    nav.bigScreen ul{
+        width: 90%;
+        margin: 5px 5%;
+    }
+    nav ul > li {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header, nav {
+        margin: 0;
+        padding: 0;
+    }
+    .header header{
+    flex-direction: column-reverse;
+    }
+    .logo.hdBlock{
+        flex: 1;
+        text-align: center;
+    }
+    .logo img{
+        border-radius: 35px;
+        height: 65px;
+    }
+    .blLogo{
+        margin: 20px 10px;
+        font-size: 42px;
+    }
+    .blLogo p{
+        font-size: 19px;
+        margin-top: -10px;
+    }
+
+    .login.hdBlock{
+        flex: 1;
+        flex-direction: row;
+        margin-top: 13px;
+    }
+    .login.hdBlock button{
+        padding: 6px;
+        width: 44%;
+        margin: 5px 3%;
+        font-size: 20px;
+    }
+
+    nav.bigScreen ul{
+        display: none;
+    }
+
+    nav.mobilScreen{
+        display: block;
+    }
+   
+}

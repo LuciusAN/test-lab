@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+ *{
+   box-sizing: border-box;
+ }
+ body {
+   background-color: #c5dbe5;
+   padding: 0;
+   margin: 0;
+ }
+ a{
+   text-decoration-line: none;
+   color: #0b65a7;
+ }
+ a:focus,
+ a:hover {
+   color: #fcfdfd;
+ }
+ a:active {
+   color: #5875e1;
+ }
